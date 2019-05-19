@@ -49,8 +49,8 @@ class VectorSum : public VectorExpression<VectorSum<V1, V2>,
                                                        typename V2::value_type>>
 {
 public:
-    // Tricky! This alias must be provided in the case where, e.g. VectorSum
-    // is templated on VectorSum.
+    // This alias must be provided in the case where, e.g. VectorSum is 
+    // templated on other vector expressions.
     using value_type = PromoteSum_t<typename V1::value_type,
                                     typename V2::value_type>;
 
@@ -75,8 +75,8 @@ class VectorDiff : public VectorExpression<VectorDiff<V1, V2>,
                                                          typename V2::value_type>>
 {
 public:
-    // Tricky! This must be aliased as value_type, and must be included for
-    // cases where a VectorDiff is templated on a VectorDiff.
+    // This alias must be provided in the case where, e.g. VectorDiff is 
+    // templated on other vector expressions.
     using value_type = PromoteDiff_t<typename V1::value_type,
                                      typename V2::value_type>;
 
