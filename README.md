@@ -1,11 +1,11 @@
 # Expression Templates
-A brief exploration into expression templates. Please note that the code provided here is only a partial implementation of what would be needed for a minimially-complete library for vector arithemtic. I do not provide the I wrote to generate the comparison timings between using expression templates and not. 
+A brief exploration into expression templates. Please note that the code provided here is only a partial implementation of what would be needed for a minimially-complete library for vector arithemtic. I do not provide the code I wrote to generate the comparison timings between using expression templates and not. 
 
 ## Summary
 
 The slides I created for presenting this topic can be found [here](https://docs.google.com/presentation/d/1WG5CnyspITbZEYCSgYHYMcLHg37DWYNNGgHdPCDOCLI/edit?usp=sharing).
 
-The motivation for the use of expression templates is to write code in such a way so that the compiler can understand expressions, e.g. mathematical vector expressions, at compile time so they can be evaluated efficiently. The example I gave in the presentation is as follows. Consider the following snippet of code 
+The motivation for the use of expression templates is to write code in such a way so that the compiler can understand expressions, e.g. mathematical vector expressions, at compile time to achieve efficient evaluation. The example I gave in the presentation is as follows. Consider the following snippet of code 
 
 ```c++
 int main() {
@@ -42,6 +42,4 @@ exactly like the code snippet above with one for loop. I forgot to report on thi
 | `Vector.h` | Self-contained vector class (one only needs to include this file) |
 | `VectorExpression.h` | Implementation of the vector expression templates |
 | `Types.h` | Provides auxiliary functionality |
-
-
 
