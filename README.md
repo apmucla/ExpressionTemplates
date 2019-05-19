@@ -39,7 +39,8 @@ exactly like the code snippet above with one for loop. I forgot to report on thi
 | File | Description |
 |------|-------------|
 | `Stopwatch.h` | Class I used to time all of my code |
+| `Types.h` | Provides auxiliary functionality |
 | `Vector.h` | Self-contained vector class (one only needs to include this file) |
 | `VectorExpression.h` | Implementation of the vector expression templates |
-| `Types.h` | Provides auxiliary functionality |
+
 
